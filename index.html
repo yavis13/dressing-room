@@ -84,6 +84,12 @@ main{max-width:1280px;padding:14px 20px 22px}.dash-head{margin:3px 4px 12px}.bra
 .weather-detail .week-icon{font-size:25px}.weather-detail .week-desc{font-size:11px}
 @media(max-width:900px){.weather-detail #todayHours{gap:3px}.weather-detail #todayHours .hour{font-size:10px;padding:5px 0}.weather-detail #todayHours .hour-icon{font-size:17px}.weather-detail .week-day{font-size:11px;padding:7px 1px}.weather-detail .week-desc{font-size:10px}.tile-hours .hour{font-size:9px}.tile-hours .hour-icon{font-size:15px}.tile-hours .hour .small{font-size:8px}}
 @media(max-width:650px){.weather-detail #todayHours{grid-template-columns:repeat(8,minmax(0,1fr))}.weather-detail .weekly{grid-template-columns:repeat(7,minmax(0,1fr))}}
+
+/* V4: subtle differentiated lower dashboard tiles */
+.tile-calendar{background:linear-gradient(145deg,#202d42 0%,#1a2638 100%)!important;border-color:#33455f!important}
+.tile-outfit{background:linear-gradient(145deg,#302b43 0%,#252239 100%)!important;border-color:#403b57!important}
+.tile-countdown{background:linear-gradient(145deg,#1d3739 0%,#192d30 100%)!important;border-color:#315052!important}
+.tile-calendar:focus-visible,.tile-outfit:focus-visible,.tile-countdown:focus-visible{outline:2px solid #a9c8ff;outline-offset:2px}
 </style></head><body><main><section id="home" class="screen active">
 <header class="dash-head"><div><span class="brand-dot"></span><b>DRESSING ROOM</b><span class="dash-sub"> / DAILY DASHBOARD</span></div><span id="status">날씨 불러오는 중</span></header>
 <div class="dash-grid">
